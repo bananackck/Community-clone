@@ -4,25 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="assets/style/index.css">
+    <link rel="stylesheet" type="text/css" href="../assets/style/index.css">
     <title>Community clone-emily</title>
 </head>
 <body>
-    <header>
-        <div class="header-contents">    
-            <nav class="nav-btn left hidden">
-                <a href="./Log_in.html">
-                    <img id="nav-back-img" src="assets/img/navigate_back.png" alt="뒤로가기">
-                </a>
-            </nav>
-            <div class="project-name">아무 말 대잔치</div>
-            <nav class="nav-btn right hidden">
-                <a href="./Posts.html">
-                    <img id="profile-img" src="assets/img/profile.png" alt="프로필 가기" style="border-radius: 20px;">
-                </a>
-            </nav>
-        </div>
-    </header>
+    <div id="header-placeholder">
+        
+    </div>
     
     <div class="main">
         <div class="contents">
@@ -44,7 +32,7 @@
             <button class="main-btn" id="login-btn" >
                 로그인
             </button>
-            <button onclick="location.href='./Sign_in.html'"
+            <button onclick="navigate(event, 'signin')"
             class="sub-btn" type="button">회원가입</button>
             
         </div>
@@ -52,5 +40,10 @@
     
     <script src = "Log_in.js"></script>
     <script src = "src\route.js"></script>
+    <script>
+        console.log('loading header');
+        // 🚀 DOM이 로드되면 header.html을 불러옴
+        document.addEventListener("DOMContentLoaded", loadHeader);
+    </script>
 </body>
 </html>
