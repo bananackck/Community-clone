@@ -9,10 +9,10 @@
 </head>
 <body>
     <div id="header-placeholder">
-        
+        <iframe src="../components/Header.html"></iframe>
     </div>
     
-    <div class="main">
+    <main>
         <div class="contents">
             <div class="title">로그인</div>
             <article class="info-wrap" id="info-wrap">
@@ -32,18 +32,18 @@
             <button class="main-btn" id="login-btn" >
                 로그인
             </button>
-            <button onclick="navigate(event, 'signin')"
+            <button onclick="location.href='./Sign_in.html'"
             class="sub-btn" type="button">회원가입</button>
             
         </div>
-    </div>
+    </main>
     
     <script src = "Log_in.js"></script>
-    <script src = "src\route.js"></script>
+    <!-- <script src = "src\route.js"></script>
     <script>
         console.log('loading header');
         // 🚀 DOM이 로드되면 header.html을 불러옴
         document.addEventListener("DOMContentLoaded", loadHeader);
-    </script>
+    </script> -->
 </body>
 </html>
